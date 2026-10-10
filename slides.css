@@ -1,0 +1,105 @@
+:root { --ink: #253d49; --accent: #b44e3e; --paper: #fff9ed; }
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; }
+body { font-family: "Trebuchet MS", "Arial Rounded MT Bold", "Apple SD Gothic Neo", sans-serif; color: var(--ink); background: var(--paper); }
+[hidden] { display: none !important; }
+.slide { min-height: 100vh; min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 48px 5vw 100px; }
+.coral { --accent: #b44e3e; background: #fff0e6; }
+.gold { --accent: #98630d; background: #fff8df; }
+.blue { --accent: #276589; background: #edf6fc; }
+.green { --accent: #356f53; background: #edf6ed; }
+.purple { --accent: #795292; background: #f7effb; }
+.composition { width: min(1240px, 100%); }
+h1, h2, p, figure { margin: 0; }
+h1, h2 { color: var(--accent); font-weight: 800; letter-spacing: -.035em; }
+.cover, .closing { text-align: center; }
+.eyebrow { font-size: clamp(20px, 2vw, 28px); margin-bottom: 24px; color: #776858; }
+.cover h1 { font-size: clamp(52px, 7vw, 108px); line-height: 1.08; }
+.question { font-size: clamp(26px, 3vw, 44px); font-weight: 700; line-height: 1.3; margin: 32px auto 0; max-width: 850px; }
+.scene { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: clamp(30px, 4vw, 70px); }
+.art img { display: block; width: 100%; height: auto; max-height: 64vh; object-fit: contain; border-radius: 20px; }
+.scene h2 { font-size: clamp(40px, 4.4vw, 66px); line-height: 1.1; }
+.keyword { margin-top: 24px; font-size: clamp(27px, 3vw, 44px); font-weight: 700; line-height: 1.2; }
+.quote { color: var(--accent); margin-top: 26px; font-size: clamp(30px, 3.4vw, 50px); font-weight: 800; line-height: 1.2; }
+.answer { text-align: center; max-width: 1120px; }
+.answer h2 { font-size: clamp(43px, 5.5vw, 76px); line-height: 1.1; }
+.answer-line { margin-top: 28px; font-size: clamp(28px, 3.8vw, 48px); }
+.answer-line strong { color: var(--accent); }
+.answer-words { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 24px 36px; margin: 40px auto 0; max-width: 760px; text-align: left; font-size: clamp(26px, 3vw, 40px); font-weight: 700; }
+.answer-words li { border-left: 5px solid #d8b45a; padding-left: 18px; }
+.closing h2 { font-size: clamp(64px, 9vw, 128px); line-height: 1.1; }
+.controls { position: fixed; left: 0; right: 0; bottom: 0; min-height: 70px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 12px 28px; gap: 12px; background: rgba(255,255,255,.93); border-top: 1px solid #e2ddd1; }
+.resources { display: flex; gap: 20px; }
+.resources a { color: #4d616c; font-size: 14px; font-weight: 700; text-decoration: none; padding: 8px 0; }
+.resources a:hover { text-decoration: underline; }
+.slide-nav { display: flex; align-items: center; gap: 16px; }
+button { font-family: inherit; cursor: pointer; color: var(--ink); border: 1px solid #d2dce0; background: #fff; border-radius: 8px; }
+.slide-nav button { width: 46px; height: 44px; font-size: 30px; line-height: 1; }
+button:disabled { color: #a4b0b5; background: #f5f5f2; cursor: default; }
+button:not(:disabled):hover { background: #fff0d1; }
+a:focus-visible, button:focus-visible { outline: 3px solid #27749d; outline-offset: 4px; }
+#indicator { font-size: 16px; font-weight: 700; min-width: 46px; text-align: center; }
+.fullscreen { justify-self: end; font-size: 14px; padding: 10px 14px; }
+@media (max-width: 720px) {
+  .slide { padding: 32px 24px 120px; }
+  .scene { grid-template-columns: 1fr; gap: 22px; text-align: center; }
+  .art { width: min(100%, 470px); margin: auto; }
+  .art img { max-height: 35vh; max-height: 35dvh; }
+  .scene h2 { font-size: 40px; }
+  .keyword { font-size: 29px; margin-top: 14px; }
+  .quote { font-size: 33px; margin-top: 14px; }
+  .cover h1 { font-size: clamp(40px, 10vw, 65px); }
+  .question { font-size: 27px; margin-top: 24px; }
+  .answer h2 { font-size: 44px; }
+  .answer-line { font-size: 29px; margin-top: 24px; }
+  .answer-words { font-size: 25px; gap: 22px 16px; margin-top: 30px; }
+  .answer-words li { padding-left: 10px; }
+  .closing h2 { font-size: 62px; }
+  .controls { padding: 8px 16px; grid-template-columns: 1fr auto; min-height: 95px; }
+  .resources { grid-column: 1; grid-row: 1; gap: 16px; }
+  .fullscreen { grid-column: 2; grid-row: 1; padding: 7px 10px; }
+  .slide-nav { grid-column: 1 / -1; grid-row: 2; justify-self: center; gap: 24px; }
+  .slide-nav button { height: 34px; width: 44px; }
+}
+@media (max-height: 560px) and (min-width: 721px) {
+  .slide { padding-top: 22px; padding-bottom: 84px; }
+  .cover h1 { font-size: 65px; }
+  .eyebrow { margin-bottom: 16px; }
+  .question { margin-top: 18px; font-size: 30px; }
+  .scene h2 { font-size: 42px; }
+  .keyword { font-size: 31px; margin-top: 18px; }
+  .quote { font-size: 34px; margin-top: 18px; }
+  .answer h2 { font-size: 44px; }
+  .answer-line { font-size: 30px; margin-top: 20px; }
+  .answer-words { font-size: 28px; margin-top: 24px; gap: 18px; }
+  .closing h2 { font-size: 76px; }
+}
+@media (max-height: 500px) and (max-width: 720px) {
+  .slide { padding: 20px 20px 100px; }
+  .scene { grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; }
+  .art img { max-height: 62dvh; }
+  .scene h2 { font-size: 28px; }
+  .keyword { font-size: 23px; }
+  .quote { font-size: 25px; }
+  .cover h1 { font-size: 38px; }
+  .eyebrow { font-size: 18px; margin-bottom: 10px; }
+  .question { margin-top: 14px; font-size: 23px; }
+  .answer h2 { font-size: 32px; }
+  .answer-line { font-size: 23px; margin-top: 14px; }
+  .answer-words { font-size: 22px; margin-top: 20px; gap: 14px; }
+}
+@media print {
+  @page { size: A4 landscape; margin: 12mm; }
+  body { height: auto; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .controls { display: none; }
+  .slide, .slide[hidden] { display: flex !important; min-height: 0; height: 183mm; padding: 12mm; break-after: page; break-inside: avoid; }
+  .slide:last-child { break-after: auto; }
+  .cover h1 { font-size: 62pt; }
+  .scene h2 { font-size: 36pt; }
+  .keyword, .question { font-size: 25pt; }
+  .quote { font-size: 28pt; }
+  .art img { max-height: 145mm; }
+  .answer h2 { font-size: 42pt; }
+  .answer-words { font-size: 26pt; }
+  .closing h2 { font-size: 78pt; }
+}

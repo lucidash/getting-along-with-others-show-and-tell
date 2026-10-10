@@ -1,0 +1,81 @@
+:root { --ink: #253d49; --accent: #ae503d; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 32px 20px; font-family: "Trebuchet MS", "Apple SD Gothic Neo", Arial, sans-serif; color: var(--ink); background: #f8f5ed; line-height: 1.6; }
+.container { max-width: 920px; margin: auto; }
+h1, h2, h3, p { margin: 0; }
+h1 { font-size: 32px; line-height: 1.25; color: var(--accent); }
+h2 { font-size: 24px; color: var(--accent); }
+h3 { font-size: 19px; }
+.subtitle { margin: 8px 0 18px; color: #5b6d76; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; margin-bottom: 24px; }
+a { color: #28688c; }
+button { background: #fff; border: 1px solid #bac7ce; border-radius: 6px; color: var(--ink); padding: 9px 15px; font-family: inherit; cursor: pointer; }
+button:hover { background: #fff0d1; }
+a:focus-visible, button:focus-visible { outline: 3px solid #27749d; outline-offset: 3px; }
+.intro, .script-section, .tips, .summary { background: #fff; border: 1px solid #e4dfd3; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; }
+.intro { border-left: 5px solid #d6aa4b; }
+.intro p + p { margin-top: 8px; }
+.script-section { border-top: 5px solid #dca086; break-inside: avoid; }
+.script-section.blue, .card.blue { border-top-color: #7eb3d0; }
+.script-section.green, .card.green { border-top-color: #86b491; }
+.script-section.purple, .card.purple { border-top-color: #b49aca; }
+.script-section.gold, .card.gold { border-top-color: #e0ba62; }
+.screen-keyword { margin: 8px 0 16px; font-size: 14px; color: #65757e; }
+.english { font-size: 23px; font-weight: 700; line-height: 1.65; }
+.korean { margin-top: 16px; color: #5a6b74; }
+.action { margin-top: 16px; padding-top: 12px; border-top: 1px solid #e7e1d5; color: #805e23; }
+.tips ul { padding-left: 22px; }
+.tips li + li { margin-top: 7px; }
+.qa { margin-top: 16px; }
+.qa + .qa { padding-top: 14px; border-top: 1px solid #eee8df; }
+.qa p + p { margin-top: 5px; }
+.sheet { margin-bottom: 30px; }
+.sheet-heading { margin-bottom: 18px; }
+.cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.card { display: flex; flex-direction: column; background: #fff; min-height: 290px; border: 1px dashed #b8bebf; border-top: 6px solid #dca086; padding: 22px; break-inside: avoid; }
+.card-number { color: #647780; font-size: 14px; }
+.card h2 { font-size: 23px; margin: 6px 0 16px; line-height: 1.2; }
+.cues { list-style: none; padding: 0; margin: 0; font-weight: 700; font-size: 24px; line-height: 1.4; }
+.cues li + li { margin-top: 8px; }
+.card .gesture { margin-top: auto; padding-top: 20px; font-size: 14px; color: #6f6149; }
+.summary h2 { margin-bottom: 12px; }
+.core-answer { font-size: 22px; font-weight: 700; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; margin-top: 18px; font-size: 17px; }
+th, td { border-bottom: 1px solid #dcded9; padding: 12px 10px; text-align: left; }
+th { background: #f5f0e2; }
+.print-tip { color: #65757e; font-size: 14px; margin-top: 8px; }
+@media screen and (max-width: 620px) {
+  body { padding: 24px 14px; }
+  .intro, .script-section, .tips, .summary { padding: 20px; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .english { font-size: 21px; }
+  table { font-size: 14px; }
+  th, td { padding: 9px 5px; }
+}
+@media print {
+  @page { size: A4 portrait; margin: 12mm; }
+  body { padding: 0; background: #fff; font-size: 10pt; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .toolbar, .print-tip { display: none; }
+  .container { max-width: none; }
+  h1 { font-size: 21pt; }
+  h2 { font-size: 16pt; }
+  .subtitle { font-size: 10pt; margin-bottom: 12px; }
+  .intro, .script-section, .tips, .summary { padding: 5mm; margin-bottom: 5mm; border-radius: 0; }
+  .english { font-size: 14pt; line-height: 1.5; }
+  .korean { font-size: 10pt; margin-top: 3mm; }
+  .screen-keyword { font-size: 9pt; margin-bottom: 3mm; }
+  .action { font-size: 9pt; margin-top: 3mm; padding-top: 3mm; }
+  .tips { break-inside: avoid; }
+  .sheet { margin: 0; break-after: page; }
+  .sheet-heading { margin-bottom: 5mm; }
+  .cards-grid { grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .card { height: 108mm; min-height: 0; padding: 5mm; }
+  .card-number { font-size: 9pt; }
+  .card h2 { font-size: 15pt; margin: 2mm 0 5mm; }
+  .cues { font-size: 17pt; }
+  .card .gesture { font-size: 9pt; padding-top: 5mm; }
+  .cards-page .summary { margin: 0; border: 0; }
+  .core-answer { font-size: 16pt; }
+  table { font-size: 11pt; }
+  th, td { padding: 3mm 2mm; }
+}

@@ -1,0 +1,25 @@
+{
+  "mode": "내장 imagegen",
+  "assets": [
+    {
+      "file": "pencils.png",
+      "prompt": "Use case: illustration-story. Asset type: local offline HTML Show & Tell presentation for children aged 6–7. Style: warm gouache and colored-pencil children's picture-book illustration, soft paper grain, simple expressive faces, cream background, muted coral, sky blue and sage green palette. Wide landscape 3:2 composition, all subjects completely inside the frame, generous clear margins. No letters, captions, labels, speech bubbles, logos or watermark. Fictional children, not photos of real people. Scene: a small open wooden box of colorful pencils beside a drawing of a simple rainbow on a classroom desk. A red pencil and a blue pencil lie clearly visible in front. Close-up still life, no people, welcoming classroom atmosphere."
+    },
+    {
+      "file": "share.png",
+      "prompt": "Use case: illustration-story. Asset type: local offline HTML Show & Tell presentation for children aged 6–7. Style: warm gouache and colored-pencil children's picture-book illustration, soft paper grain, simple expressive faces, cream background, muted coral, sky blue and sage green palette. Wide landscape 3:2 composition, all subjects completely inside the frame, generous clear margins. No letters, captions, labels, speech bubbles, logos or watermark. Fictional children, not photos of real people. Scene: two happy young children seated at the same classroom art table. A child in a coral shirt gently offers a red colored pencil to a child in a blue shirt, who reaches to accept it. Paper drawings and a box of pencils on the table. Make the offered pencil clearly visible and the act of sharing unambiguous."
+    },
+    {
+      "file": "turns.png",
+      "prompt": "Use case: illustration-story. Asset type: local offline HTML Show & Tell presentation for children aged 6–7. Style: warm gouache and colored-pencil children's picture-book illustration, soft paper grain, simple expressive faces, cream background, muted coral, sky blue and sage green palette. Wide landscape 3:2 composition, all subjects completely inside the frame, generous clear margins. No letters, captions, labels, speech bubbles, logos or watermark. Fictional children, not photos of real people. Scene: one young child in a blue shirt rides a small playground swing while a child in a coral shirt stands patiently several steps to the side at a safe distance. The waiting child is smiling and relaxed. A gentle playground with green grass. Show only a single swing and the two children. Make waiting for a turn clear."
+    },
+    {
+      "file": "help.png",
+      "prompt": "Use case: illustration-story. Asset type: local offline HTML Show & Tell presentation for children aged 6–7. Style: warm gouache and colored-pencil children's picture-book illustration, soft paper grain, simple expressive faces, cream background, muted coral, sky blue and sage green palette. Wide landscape 3:2 composition, all subjects completely inside the frame, generous clear margins. No letters, captions, labels, speech bubbles, logos or watermark. Fictional children, not photos of real people. Scene: two young children kneel on a classroom floor picking up several chunky colored pencils that have fallen from an open pencil box. One child in a coral shirt helps the child in a blue shirt, both smiling gently. Keep the action large and clear, show hands reaching for scattered pencils. Simple classroom background."
+    },
+    {
+      "file": "kind.png",
+      "prompt": "Use case: illustration-story. Asset type: local offline HTML Show & Tell presentation for children aged 6–7. Style: warm gouache and colored-pencil children's picture-book illustration, soft paper grain, simple expressive faces, cream background, muted coral, sky blue and sage green palette. Wide landscape 3:2 composition, all subjects completely inside the frame, generous clear margins. No letters, captions, labels, speech bubbles, logos or watermark. Fictional children, not photos of real people. Scene: three young children on a green playground. Two children with a small blue ball welcome a third child standing nearby, with an inviting open-hand gesture and friendly smiles. Coral shirt, blue shirt, and yellow shirt. Make the invitation to join play clear. No physical grabbing, no touching, no text."
+    }
+  ]
+}

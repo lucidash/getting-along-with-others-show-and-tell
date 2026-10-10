@@ -1,0 +1,12 @@
+{
+  "name": "getting-along-with-others-show-and-tell",
+  "version": "1.0.0",
+  "private": true,
+  "description": "친구와 사이좋게 지내는 방법을 소개하는 Show & Tell 발표 자료",
+  "scripts": {
+    "build": "node --check slides.js && node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
