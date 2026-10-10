@@ -1,0 +1,50 @@
+name: 발표 자료 빌드 및 배포
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: 발표 자료 빌드
+    runs-on: ubuntu-latest
+    steps:
+      - name: 소스 가져오기
+        uses: actions/checkout@v7.0.1
+      - name: Node.js 준비
+        uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '22'
+      - name: GitHub Pages 설정 확인
+        uses: actions/configure-pages@v6.0.0
+      - name: 배포용 파일 빌드
+        run: npm run build
+      - name: 배포 파일 업로드
+        uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: dist
+          include-hidden-files: true
+
+  deploy:
+    name: GitHub Pages 배포
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 발표 자료 배포
+        id: deployment
+        uses: actions/deploy-pages@v5.0.1
