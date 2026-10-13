@@ -20,6 +20,15 @@
     {
       "file": "kind.png",
       "prompt": "Use case: illustration-story. Asset type: local offline HTML Show & Tell presentation for children aged 6–7. Style: warm gouache and colored-pencil children's picture-book illustration, soft paper grain, simple expressive faces, cream background, muted coral, sky blue and sage green palette. Wide landscape 3:2 composition, all subjects completely inside the frame, generous clear margins. No letters, captions, labels, speech bubbles, logos or watermark. Fictional children, not photos of real people. Scene: three young children on a green playground. Two children with a small blue ball welcome a third child standing nearby, with an inviting open-hand gesture and friendly smiles. Coral shirt, blue shirt, and yellow shirt. Make the invitation to join play clear. No physical grabbing, no touching, no text."
+    },
+    {
+      "file": "girl-pencils.png",
+      "prompt": "Use case: compositing. Asset type: second slide of a children's Show & Tell presentation. Input image 1 (share.png): character and art-style reference only. Input image 2 (pencils.png): edit target, classroom desk and pencil box reference. Create a new introductory scene for the spoken lines: 'This girl has a box of colored pencils. She likes to draw pictures with her friend.' Add the girl from image 1, with dark brown hair in a loose bun and a coral shirt with a simple flower, seated at the desk in image 2. She is drawing a colorful rainbow on paper with a blue colored pencil. Her boy friend from image 1, with light brown hair and a blue shirt, sits beside her drawing on his own paper. Keep the wooden pencil box and clearly visible colored pencils in front of the girl, so the box is visually associated with her. Preserve the warm gouache and colored-pencil picture-book style, cream classroom light, soft paper grain, gentle expressive faces, and the palette of both references. Landscape 3:2 composition with generous margins and both children's faces fully visible. Do not show a pencil being passed between them in this scene: this is the introduction to drawing, the next slide separately shows sharing. No letters, text, labels, speech bubbles, brands or watermarks. Make the scene readable at small slide size.",
+      "final_adjustment": "Use case: precise-object-edit. Edit target: the provided picture-book classroom illustration. Change only the colored pencil held in the boy's right hand on the right side of the picture from red to clearly green. Keep its position, shape and size unchanged. Keep the girl's blue pencil, both children's faces, hair, clothes, hands, drawings, wooden pencil box, all classroom details, lighting, warm gouache/colored-pencil style, landscape 3:2 proportions and every other element exactly as they are. This continuity adjustment makes the next scene, where he needs to borrow a red pencil, make sense. No added text, labels, speech bubbles or watermark.",
+      "reference_files": [
+        "share.png",
+        "pencils.png"
+      ]
     }
   ]
 }

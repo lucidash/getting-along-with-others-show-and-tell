@@ -11,7 +11,7 @@ const files = [
   'slides.css',
   'slides.js',
   'handouts.css',
-  'images/pencils.png',
+  'images/girl-pencils.png',
   'images/share.png',
   'images/turns.png',
   'images/help.png',

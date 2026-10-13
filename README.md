@@ -4,10 +4,10 @@
 
 - **주제:** Getting Along with Others
 - **핵심 질문:** How do good friends act?
-- **대상:** 기존 프로젝트와 같은 한국 영어 유치원 6~7세 수준
-- **구성:** 8장, 동작과 소품 보여 주기를 포함해 약 2~3분
-- **핵심 답:** Good friends are kind. They share, take turns, and help each other.
-- **소품:** 색연필 두세 자루, 가능하면 빨간 색연필 포함
+- **대상:** SR2 정도를 염두에 둔 한국 영어 유치원 재원생
+- **구성:** 8장, 약 150단어, 그림 설명과 쉬는 시간을 포함해 약 2~3분
+- **핵심 답:** Good friends care about each other’s feelings. They share, take turns, help one another, and include everyone.
+- **발표 방식:** 그림 속 소녀와 친구들의 상황을 설명하는 3인칭 발표. 별도 소품은 필요하지 않습니다.
 
 ## 온라인 발표 자료
 
@@ -31,13 +31,13 @@
 | 장 | 내용 | 핵심 표현 |
 |---|---|---|
 | 1 | 인사와 주제 소개 | How do good friends act? |
-| 2 | 실제 색연필 보여 주기 | Draw together |
-| 3 | 필요한 색연필 나눠 쓰기 | Good friends share / Here you are! |
-| 4 | 그네 차례 기다리기 | Wait for my turn / Your turn! |
-| 5 | 떨어진 색연필 함께 줍기 | Help each other |
-| 6 | 혼자 있는 친구 초대하기 | Kind words / Come and play! |
-| 7 | 핵심 질문에 답하기 | Good friends are kind |
-| 8 | 다짐과 마무리 인사 | I can be a good friend, too! |
+| 2 | 소녀와 색연필 소개 | This girl has a box of colored pencils. |
+| 3 | 필요한 색연필 나눠 쓰기 | She shares one with him so they can draw together. |
+| 4 | 그네 차례 기다리기 | Taking turns gives everyone a chance to play. |
+| 5 | 떨어진 색연필 함께 줍기 | Cleaning up is easier as a team. |
+| 6 | 혼자 있는 친구 초대하기 | They invite him to play, so he feels welcome. |
+| 7 | 핵심 질문에 답하기 | Good friends care about each other’s feelings. |
+| 8 | 친절의 의미와 마무리 인사 | Small acts of kindness can make a big difference. |
 
 ## 실행과 연습
 
@@ -50,8 +50,8 @@ open index.html
 
 1. `script.html`에서 한 문장씩 뜻과 동작을 함께 연습합니다.
 2. `cards.html`의 **큐 카드 인쇄** 버튼을 누릅니다. A4 세로, 배율 100%, 머리글·바닥글 해제를 권장합니다. 카드 4장씩 2페이지와 요약표 1페이지입니다.
-3. 색연필을 준비하고 `index.html`에서 **전체 화면** 버튼을 누릅니다.
-4. 문장 사이에 잠시 멈추고 그림과 소품을 보여 주며 시간을 재 봅니다. 읽는 속도에 따라 발표 시간은 달라집니다.
+3. `index.html`에서 **전체 화면** 버튼을 누르고, 그림 속 아이들과 물건을 가리키며 설명합니다.
+4. 문장 사이에 잠시 멈추고 그림 속 상황을 가리키며 시간을 재 봅니다. 말하는 속도에 따라 발표 시간은 달라집니다.
 
 ### 슬라이드 이동
 
@@ -81,4 +81,8 @@ npm run build
 
 삽화는 내장 imagegen 도구로 생성한 가상의 교실·놀이터 장면입니다. 실제 인물이나 실제 사건 사진이 아닙니다. 파일별 최종 프롬프트는 [images/prompts.json](images/prompts.json)에 기록했습니다.
 
-내용을 바꿀 때는 슬라이드, 대본, 큐 카드와 요약표를 함께 수정하세요. 준비물이 색연필에서 다른 물건으로 바뀌면 2·3·5장의 표현과 삽화도 맞춰 주세요.
+본문은 `this girl`, `she`, `her friend`, `they`를 사용해 그림 속 상황을 설명합니다. `so`, `while`, `when`, `because`로 행동의 이유와 결과를 연결하고, `patiently`, `feel welcome`, `feel left out`은 그림과 함께 뜻을 익힙니다.
+
+현재 2장의 도입 그림은 `images/girl-pencils.png`입니다. 최초 색연필 정물 삽화 `images/pencils.png`는 원본 기록으로 남겨 두고 배포 파일에서는 제외합니다.
+
+내용을 바꿀 때는 슬라이드, 대본, 큐 카드와 요약표를 함께 수정하세요. 대상 수준은 발표문 작성의 참고 기준이며, 실제 발표 시간과 난이도는 아이의 말하기 속도와 이해도에 따라 확인합니다.
